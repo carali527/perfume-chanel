@@ -155,7 +155,7 @@ onUnmounted(() => {
 });
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 body {
   font-family: Arial, sans-serif;
   margin: 0;

@@ -5,6 +5,6 @@
 import { onMounted, onUnmounted } from 'vue';
 </script>
   
-<style scoped>
+<style lang="scss" scoped>
 </style>
   
