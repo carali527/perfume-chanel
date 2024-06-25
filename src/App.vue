@@ -87,4 +87,10 @@ onUnmounted(() => {
     opacity: 1;
   }
 }
+
+@media (max-width: 768px) {
+  .content {
+    padding-top: 70px;
+  }
+}
 </style>

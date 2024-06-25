@@ -185,7 +185,6 @@ onUnmounted(() => {
 
 .nav-item {
   position: relative;
-  // overflow: hidden;
 
   &:hover .dropdown {
     display: block;
