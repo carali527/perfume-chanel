@@ -171,18 +171,21 @@ body {
 
 .section__title {
   text-transform: uppercase;
-  font-size: 3rem;
+  font-size: 30px;
   font-weight: 900;
 }
 
 .section__title--authored::before {
   display: block;
-  font-size: 1.25rem;
+  font-size: 18px;
   content: 'perfume';
 }
 
 .background-img {
   background-repeat: no-repeat;
+}
+
+.content > .background-img:first-of-type {
   background-position: center;
 }
 .img-1 {
@@ -199,5 +202,17 @@ body {
 .img-3 {
   color: #000;
   background-image: url('https://puls-img.chanel.com/c_limit,w_3200/q_auto:good,dpr_auto,f_auto/1718096466120-onelandingpagemajorpushdesktop2880x900pxkimjpg_1800x5760.jpg');
+}
+
+@media (max-width: 1200px) {
+  .background-img {
+    background-position: center;
+  }
+  .section__title {
+    font-size: 20px;
+  }
+  .section__title--authored::before {
+    font-size: 16px;
+  }
 }
 </style>

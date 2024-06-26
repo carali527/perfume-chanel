@@ -23,10 +23,6 @@ const isNavItemHidden = ref(false);
 const showBackToTop = ref(false);
 let lastScrollY = window.scrollY;
 
-const toggleMenu = () => {
-  isMenuOpen.value = !isMenuOpen.value;
-};
-
 const updateIsMobile = () => {
   isMobile.value = window.innerWidth <= 768;
 };

@@ -1,87 +1,88 @@
 <template>
-  <div class="product-grid">
-    <ul class="product-categories">
-      <li class="category" v-for="category in categories" :key="category.name">
-        <button>
-          <img :src="category.image" :alt="category.name">
-          <p>{{ category.name }}</p>
-        </button>
-      </li>
-    </ul>
-  </div>
-  <div class="product-list">
-    <div class="product-item" v-for="product in products" :key="product.id">
-      <div class="product-item-stick">
-        <a href="">
-          <img :src="product.image" :alt="product.name">
-          <h3>{{ product.name }}</h3>
-          <span>{{ product.description }}</span>
-        </a>
-        <span>{{ product.price }}</span>
-        <button class="add-to-bag" @click="addToCart(product.id)">
-          <span>新增到購物車</span>
-        </button>
+    <div class="product-grid">
+      <ul class="product-categories">
+        <li class="category" v-for="category in categories" :key="category.name">
+            <button>
+                <img :src="category.image" :alt="category.name">
+                <p>{{ category.name }}</p>
+            </button>
+        </li>
+      </ul>
+      <div class="product-list">
+        <div class="product-item" v-for="product in products" :key="product.id">
+          <a href="">
+            <img :src="product.image" :alt="product.name">
+            <h3>{{ product.name }}</h3>
+            <p>{{ product.description }}</p>
+          </a>
+          <p>{{ product.price }}</p>
+          <button class="add-to-bag" @click="addToCart(product.id)">
+            <span>新增到購物車</span>
+          </button>
+        </div>
       </div>
     </div>
-  </div>
-</template>
-
-<script setup>
-import { ref } from 'vue';
-
-const categories = ref([
-  { name: '香水', image: 'https://www.chanel.com/apac/img/prd-emea/sys-master/content/P1/h4b/h2b/9794397339678' },
-  { name: '隨機噴香霧', image: 'https://www.chanel.com/apac/img/prd-emea/sys-master/content/P1/h4b/h2b/9794397339678' },
-  { name: '沐浴和身體保養', image: 'https://www.chanel.com/apac/img/prd-emea/sys-master/content/P1/h4b/h2b/9794397339678' }
-]);
-
-const products = ref([
+  </template>
+  
+  <script setup>
+  import { ref } from 'vue';
+  
+  const categories = ref([
+    { name: '香水', image: 'https://www.chanel.com/apac/img/prd-emea/sys-master/content/P1/h4b/h2b/9794397339678' },
+    { name: '隨機噴香霧', image: 'https://www.chanel.com/apac/img/prd-emea/sys-master/content/P1/h4b/h2b/9794397339678' },
+    { name: '沐浴和身體保養', image: 'https://www.chanel.com/apac/img/prd-emea/sys-master/content/P1/h4b/h2b/9794397339678' }
+  ]);
+  
+  const products = ref([
     {
       id: 1,
-      name: '香奈兒嘉柏麗香水1',
+      name: '香奈兒嘉柏麗香水',
       description: '香奈兒嘉柏麗隨機噴香霧',
       price: 'NT$ 2,230',
       image: 'https://www.chanel.com/images//t_one//w_0.51,h_0.51,c_crop/q_auto:good,f_autoplus,fl_lossy,dpr_1.1/w_840/gabrielle-chanel-hair-mist-1-35fl-oz--packshot-default-120870-9545536995358.jpg'
     },
     {
       id: 2,
-      name: '香奈兒嘉柏麗香水2',
+      name: '香奈兒嘉柏麗香水',
       description: '香奈兒嘉柏麗流金隨身香水',
       price: 'NT$ 5,700',
       image: 'https://www.chanel.com/images//t_one//w_0.51,h_0.51,c_crop/q_auto:good,f_autoplus,fl_lossy,dpr_1.1/w_840/gabrielle-chanel-hair-mist-1-35fl-oz--packshot-default-120870-9545536995358.jpg'
     },
     {
       id: 3,
-      name: '香奈兒嘉柏麗香水3',
+      name: '香奈兒嘉柏麗香水',
       description: '香奈兒嘉柏麗流金香水',
       price: 'NT$ 4,800 起',
       image: 'https://www.chanel.com/images//t_one//w_0.51,h_0.51,c_crop/q_auto:good,f_autoplus,fl_lossy,dpr_1.1/w_840/gabrielle-chanel-hair-mist-1-35fl-oz--packshot-default-120870-9545536995358.jpg'
     },
     {
       id: 3,
-      name: '香奈兒嘉柏麗香水4',
+      name: '香奈兒嘉柏麗香水',
       description: '香奈兒嘉柏麗流金香水',
       price: 'NT$ 4,800 起',
       image: 'https://www.chanel.com/images//t_one//w_0.51,h_0.51,c_crop/q_auto:good,f_autoplus,fl_lossy,dpr_1.1/w_840/gabrielle-chanel-hair-mist-1-35fl-oz--packshot-default-120870-9545536995358.jpg'
     },
     {
       id: 3,
-      name: '香奈兒嘉柏麗香水5',
+      name: '香奈兒嘉柏麗香水',
       description: '香奈兒嘉柏麗流金香水',
       price: 'NT$ 4,800 起',
       image: 'https://www.chanel.com/images//t_one//w_0.51,h_0.51,c_crop/q_auto:good,f_autoplus,fl_lossy,dpr_1.1/w_840/gabrielle-chanel-hair-mist-1-35fl-oz--packshot-default-120870-9545536995358.jpg'
     },
     {
       id: 3,
-      name: '香奈兒嘉柏麗香水6',
+      name: '香奈兒嘉柏麗香水',
       description: '香奈兒嘉柏麗流金香水',
       price: 'NT$ 4,800 起',
       image: 'https://www.chanel.com/images//t_one//w_0.51,h_0.51,c_crop/q_auto:good,f_autoplus,fl_lossy,dpr_1.1/w_840/gabrielle-chanel-hair-mist-1-35fl-oz--packshot-default-120870-9545536995358.jpg'
     }
   ]);
   
-</script>
-
+  const addToCart = (productId) => {
+    console.log(`Product ${productId} added to cart`);
+  };
+  </script>
+  
 <style lang="scss" scoped>
 .product-grid {
   display: flex;
@@ -94,6 +95,7 @@ const products = ref([
   display: flex;
   justify-content: center;
   gap: 20px;
+  margin-bottom: 40px;
 }
 
 .category {
@@ -115,16 +117,16 @@ const products = ref([
 }
 
 .product-list {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
 }
 
 .product-item {
-  margin: auto;
-  height: 100vh;
   text-align: center;
   max-width: 200px;
+  flex: 1 1 calc(33.333% - 40px);
   box-sizing: border-box;
   img {
     width: 100%;
@@ -133,22 +135,8 @@ const products = ref([
   a:hover {
     img {
         border-bottom: 1px solid #000;
-        transform: scale(1.1);
     }
   }
-}
-
-.product-item-stick { 
-  top: 70px;
-  position: sticky;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  background-position: center;
-  background-size: cover;
-  margin-top: 0;
-  background-color: #ffffff;
 }
 
 button.add-to-bag {
@@ -181,29 +169,15 @@ button.add-to-bag {
   }
 }
 
-.product-item:not(:first-child):not(:nth-child(2)):not(:nth-child(3)) {
-  margin-top: -45vh;
-}
-
-@media (max-width: 1024px) {
-  .product-list {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    padding: 20px;
-  }
-  .product-item:not(:first-child):not(:nth-child(2)) {
-    margin-top: -45vh;
+@media (max-width: 768px) {
+  .product-item {
+    flex: 1 1 calc(50% - 20px);
   }
 }
 
-@media (max-width: 567px) {
-  .product-list {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    padding: 20px;
-  }
-  .product-item:not(:first-child) {
-    margin-top: -45vh;
+@media (max-width: 480px) {
+  .product-item {
+    flex: 1 1 100%;
   }
 }
 </style>
