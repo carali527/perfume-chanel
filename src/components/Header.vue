@@ -22,8 +22,9 @@
           <a class="main-link" href="#/fragrances">男性香氛</a>
           <div class="dropdown" v-if="activeDropdown === 'man' || isMobile">
             <ul>
-              <li><a href="#/fragrances">香奈兒藍色男性香氛系列</a></li>
-              <li><a href="#/fragrances">香奈兒藍色男性香氛系列</a></li>
+              <li><a href="#/fragrances">香水</a></li>
+              <li><a href="#/fragrances">隨機噴香霧</a></li>
+              <li><a href="#/fragrances">沐浴和身體保養</a></li>
             </ul>
           </div>
         </li>
@@ -35,8 +36,9 @@
           <a class="main-link" href="#/fragrances">女性香氛</a>
           <div class="dropdown" v-if="activeDropdown === 'woman' || isMobile">
             <ul>
-              <li><a href="#/fragrances">香奈兒藍色女性香氛系列</a></li>
-              <li><a href="#/fragrances">香奈兒藍色女性香氛系列</a></li>
+              <li><a href="#/fragrances">香水</a></li>
+              <li><a href="#/fragrances">隨機噴香霧</a></li>
+              <li><a href="#/fragrances">沐浴和身體保養</a></li>
             </ul>
           </div>
         </li>
