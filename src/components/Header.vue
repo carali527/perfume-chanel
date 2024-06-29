@@ -4,9 +4,9 @@
       <div class="icons">
         <span class="menu-icon" @click="toggleMenu"><i class="fas fa-bars"></i></span>
       </div>
-      <div class="logo">
+      <a href="#" class="logo">
         <span>CHANEL</span>
-      </div>
+      </a>
       <div class="icons">
         <span class="icon"><i class="fas fa-user"></i></span>
         <span class="icon"><i class="fas fa-shopping-bag"></i></span>

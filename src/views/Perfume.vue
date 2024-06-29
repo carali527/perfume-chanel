@@ -83,7 +83,6 @@ const swiperOptions = {
 
 .price {
   font-size: 24px;
-  color: red;
 }
 
 .add-to-cart {

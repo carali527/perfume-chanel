@@ -187,6 +187,9 @@ body {
 
 .content > .background-img:first-of-type {
   background-position: center;
+  p {
+    color: #ffff;
+  }
 }
 .img-1 {
   color: #ffff;
