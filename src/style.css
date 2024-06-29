@@ -15,8 +15,13 @@
 
 a {
   font-weight: 500;
-  color: #000000;
   text-decoration: inherit;
+}
+
+p,
+a,
+span {
+  color: #000000;
 }
 
 h1 {
@@ -26,6 +31,7 @@ h1 {
 
 ul {
   list-style: none;
+  padding-inline-start: 0px;
 }
 
 button {
